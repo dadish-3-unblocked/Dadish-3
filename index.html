@@ -127,33 +127,7 @@
             background: #000;
             border: 2px solid #2a2a4a;
         }
-        .play-link { display: block; position: relative; text-decoration: none; cursor: pointer; }
-        .play-overlay {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0,0,0,0.4);
-            transition: background 0.3s;
-        }
-        .play-link:hover .play-overlay { background: rgba(0,0,0,0.6); }
-        .play-icon {
-            font-size: 5rem;
-            color: #fff;
-            text-shadow: 0 2px 20px rgba(0,0,0,0.5);
-        }
-        .play-text {
-            margin-top: 10px;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #fff;
-            background: #5b8cff;
-            padding: 10px 30px;
-            border-radius: 8px;
-            text-shadow: none;
-        }
+        .game-frame iframe { width: 100%; height: 100%; border: none; }
 
         .game-info {
             margin-top: 16px;
@@ -232,13 +206,13 @@
 
     <div class="main">
         <div class="game-area">
-            <a href="https://gameriz.com/game/dadish-3-unblocked/" class="game-frame play-link">
-                <img src="https://gameriz.com/Thumbnails/Games/Dadish3.jpg" alt="Play Dadish 3 Unblocked - Free Online Game" style="width:100%;height:100%;object-fit:cover;">
-                <div class="play-overlay">
-                    <div class="play-icon">&#9654;</div>
-                    <div class="play-text">PLAY NOW - FREE</div>
-                </div>
-            </a>
+            <div class="game-frame">
+                <iframe
+                    src="game/"
+                    title="Play Dadish 3 Online - Free Browser Game"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
             <div class="game-info">
                 <h2>Play Dadish 3 Online for Free</h2>
